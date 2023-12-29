@@ -1,0 +1,1 @@
+export { useRouteToMenu } from './useRouteToMenu'

@@ -1,8 +1,15 @@
-function App() {
+import { App as AntdApp } from 'antd'
+import { RouterProvider } from 'react-router-dom'
+import router from '@/router'
+import AntdConfig from '@/styles/antd'
+
+const App = () => {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <AntdConfig>
+      <AntdApp>
+        <RouterProvider router={router} />
+      </AntdApp>
+    </AntdConfig>
   )
 }
 
